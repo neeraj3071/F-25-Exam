@@ -1,24 +1,10 @@
 {
-  "name": "Full Stack Multi-Language DevContainer",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "app",
-  "workspaceFolder": "/workspace",
-
+  "name": "Node Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "ms-azuretools.vscode-docker",
-        "ms-vscode.cpptools",
-        "ms-python.python",
-        "ms-vscode.vscode-typescript-next",
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "vscjava.vscode-java-pack",
-        "vmware.vscode-boot-dev-pack",
-        "GitHub.copilot"
-      ]
+      "extensions": ["dbaeumer.vscode-eslint"]
     }
   },
-
-  "postCreateCommand": "npm install -g @nestjs/cli && pip install --upgrade pip"
+  "postCreateCommand": "npm install"
 }
